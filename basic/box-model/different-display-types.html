@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>さまざまな表示型</title>
+    <style>
+      .block-el p,
+      .block-el ul {
+        border: 2px solid rebeccapurple;
+        padding: .5em;
+      }
+
+      .block-el .block,
+      .block-el li {
+        border: 2px solid blue;
+        padding: .5em;
+      }
+
+      .block-el ul {
+        display: flex;
+        list-style: none;
+      }
+
+      .block-el .block {
+        display: block;
+      }
+
+      .inline-el p,
+      .inline-el ul {
+        border: 2px solid rebeccapurple;
+      }
+
+      .inline-el span,
+      .inline-el li {
+        border: 2px solid blue;
+      }
+
+      .inline-el ul {
+        display: inline-flex;
+        list-style: none;
+        padding: 0;
+      }
+
+      .inline-el .inline {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>さまざまな表示型</h1>
+    <section class="block-el">
+      <h2>block 要素</h2>
+
+      <p>I am a paragraph. A short one.</p>
+      <ul>
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+      </ul>
+      <p>I am another paragraph. Some of the <span class="block">words</span> have been wrapped in a <span>span element</span>.</p>
+    </section>
+    <section class="inline-el">
+      <h2>inline 要素</h2>
+
+      <p>
+        I am a paragraph. Some of the
+        <span>words</span> have been wrapped in a
+        <span>span element</span>.
+      </p>
+      <ul>
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+      </ul>
+      <p class="inline">I am a paragraph. A short one.</p>
+      <p class="inline">I am another paragraph. Also a short one.</p>
+    </section>
+  </body>
+</html>
