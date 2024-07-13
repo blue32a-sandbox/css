@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>外側の表示型</title>
+  <style>
+    section {
+      margin-bottom: 30px;
+    }
+    .block-el {
+      background-color: lightblue;
+    }
+    .inline-el {
+      background-color: lightpink;
+    }
+    #width-and-height-property .block-el,
+    #width-and-height-property .inline-el {
+      width: 200px;
+      height: 100px;
+    }
+    #padding-margin-border .block-el {
+      width: 200px;
+    }
+    #padding-margin-border .block-el,
+    #padding-margin-border .inline-el {
+      padding: 20px;
+      margin: 30px;
+      border: 2px solid black;
+    }
+    .width .container {
+      border: 2px solid green;
+      padding: 20px;
+    }
+    .width .block-el,
+    .width .inline-el {
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <h1>外側の表示型</h1>
+  <p>ボックスの外側の表示型が block の場合と inline 場合の違い。</p>
+  <section id="table-of-contents">
+    <ul>
+      <li><a href="#new-line">新しい行への分割</a></li>
+      <li><a href="#width-and-height-property">width および height プロパティ</a></li>
+      <li><a href="#padding-margin-border">パディング、マージン、ボーダー</a></li>
+      <li><a href="#width">width が指定されていない場合の幅</a></li>
+    </ul>
+  </section>
+  <section id="new-line">
+    <h2>新しい行への分割</h2>
+    <h3>block</h3>
+    <div class="block-el">Block Item 1</div>
+    <div class="block-el">Block Item 2</div>
+    <h3>inline</h3>
+    <span class="inline-el">Inline Item 1</span>
+    <span class="inline-el">Inline Item 2</span>
+  </section>
+
+  <section id="width-and-height-property">
+    <h2>width および height プロパティ</h2>
+    <h3>block</h3>
+    <div class="block-el">Block Item</div>
+    <h3>inline</h3>
+    <span class="inline-el">Inline Item</span>
+  </section>
+
+  <section id="padding-margin-border">
+    <h2>パディング、マージン、ボーダー</h2>
+    <h3>block</h3>
+    <div class="block-el">Block Item 1</div>
+    <div class="block-el">Block Item 2</div>
+    <h3>inline</h3>
+    <span class="inline-el">Inline Item 1</span>
+    <span class="inline-el">Inline Item 2</span><br>
+    <span class="inline-el">Inline Item 3</span>
+  </section>
+
+  <section id="width">
+    <h2>width が指定されていない場合の幅</h2>
+    <h3>block</h3>
+    <div class="container">
+      <div class="block-el">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</div>
+    </div>
+    <h3>inline</h3>
+    <div class="container">
+      <span class="inline-el">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</span>
+    </div>
+  </section>
+</body>
+</html>
