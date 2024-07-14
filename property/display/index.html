@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>display プロパティ</title>
+  <style>
+    .container {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+    }
+    .box {
+      border: 3px dashed orange;
+    }
+    .child {
+      display: inline-block;
+      padding: .5em 1em;
+      background-color: #ccf;
+      border: 1px solid #ababab;
+      color: #000;
+    }
+    .block {
+      display: block;
+    }
+    .inline-block {
+      display: inline-block;
+    }
+    .none {
+      display: none;
+    }
+    .flex {
+      display: flex;
+    }
+    .grid {
+      display: grid;
+    }
+  </style>
+</head>
+<body>
+  <h1>display プロパティ</h1>
+
+  <h2>block</h2>
+  <div class="container">
+    Some text A.
+    <div class="box block">
+      <div class="child">Child 1</div>
+      <div class="child">Child 2</div>
+      <div class="child">Child 3</div>
+    </div>
+    Some text B.
+  </div>
+
+  <h2>inline-block</h2>
+  <div class="container">
+    Some text A.
+    <div class="box inline-block">
+      <div class="child">Child 1</div>
+      <div class="child">Child 2</div>
+      <div class="child">Child 3</div>
+    </div>
+    Some text B.
+  </div>
+
+  <h2>none</h2>
+  <div class="container">
+    Some text A.
+    <div class="box none">
+      <div class="child">Child 1</div>
+      <div class="child">Child 2</div>
+      <div class="child">Child 3</div>
+    </div>
+    Some text B.
+  </div>
+
+  <h2>flex</h2>
+  <div class="container">
+    Some text A.
+    <div class="box flex">
+      <div class="child">Child 1</div>
+      <div class="child">Child 2</div>
+      <div class="child">Child 3</div>
+    </div>
+    Some text B.
+  </div>
+
+  <h2>grid</h2>
+  <div class="container">
+    Some text A.
+    <div class="box grid">
+      <div class="child">Child 1</div>
+      <div class="child">Child 2</div>
+      <div class="child">Child 3</div>
+    </div>
+    Some text B.
+  </div>
+</body>
+</html>
