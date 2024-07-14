@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>通常フロー</title>
+  <style>
+    body {
+      width: 500px;
+      margin: 0 auto;
+    }
+
+    p {
+      background: rgb(255 84 104 / 30%);
+      border: 2px solid rgb(255 84 104);
+      padding: 10px;
+      margin: 10px;
+    }
+
+    span {
+      background: white;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <h1>通常フロー</h1>
+  <p>
+    これは基本的なブロックレベル要素です。隣接するブロックレベル要素は下の新しい行に配置されています。
+  </p>
+
+  <p>
+    既定では、親要素の幅の 100% にわたり、子コンテンツと同じ高さになります。幅と高さの合計は、コンテンツ + パディング + 境界の幅/高さです。
+  </p>
+
+  <p>
+    マージンによって分けられています。マージンの相殺のため、両方ではなく、 1 つのマージンの幅で区切られます。
+  </p>
+
+  <p>
+    <span>これ</span>と<span>これ</span>のようなインライン要素は、同じ行に配置され、同じ行に空間がある場合は隣接するテキストノードに配置されます。
+    あふれたインライン要素は、<span>可能であれば（このようにテキストを含むものであれば）新しい行に折り返され</span>、そうでなければ次の画像のように単に新しい行に進みます。
+    <img src="long.jpg" alt="snippet of cloth" />
+  </p>
+</body>
+</html>
